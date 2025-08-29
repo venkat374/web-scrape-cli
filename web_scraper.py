@@ -29,3 +29,6 @@ try:
 
 except requests.exceptions.RequestException as e:
     print(f"Failed to fetch the URL {url}")
+
+
+    #new
