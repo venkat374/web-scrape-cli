@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+tests/test_parse.py
+tests/test_utils.py
+webscraper/__init__.py
+webscraper/cli.py
+webscraper.egg-info/PKG-INFO
+webscraper.egg-info/SOURCES.txt
+webscraper.egg-info/dependency_links.txt
+webscraper.egg-info/entry_points.txt
+webscraper.egg-info/requires.txt
+webscraper.egg-info/top_level.txt
+webscraper/core/fetch.py
+webscraper/core/parse.py
+webscraper/core/utils.py
