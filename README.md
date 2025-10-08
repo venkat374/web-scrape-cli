@@ -3,7 +3,7 @@
 A simple **command-line web scraper** built with Python.
 This tool fetches a webpage, extracts its title and all links, and displays them neatly in the terminal.
 
-Perfect for learning how web scraping, CLI arguments, and project structuring work in Python.
+This project was built for learning how CLI tools work and the functionalities were not a pritoritiy during developement.
 
 ---
 
