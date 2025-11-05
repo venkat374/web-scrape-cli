@@ -45,7 +45,7 @@ web-scrape-cli/
 1. **Clone the project:**
 
    ```bash
-   git clone https://github.com/yourusername/web-scrape-cli.git
+   git clone https://github.com/venkat374/web-scrape-cli.git
    cd web-scrape-cli
    ```
 
