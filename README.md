@@ -9,11 +9,11 @@ This project was built for learning how CLI tools work and the functionalities w
 
 ## Features
 
-✅ Fetch any webpage using its URL.
+Fetch any webpage using its URL.
 
-✅ Automatically adds `https://` if you forget it.
+Automatically adds `https://` if you forget it.
 
-✅ Extracts and prints:
+Extracts and prints:
 
 * Page title
 * All hyperlinks (`<a href="...">`) with text
@@ -96,7 +96,7 @@ All Links:
 
 ---
 
-## ⚠️ Notes
+## Notes
 
 * The tool **only scrapes publicly accessible pages**.
 * It’s meant for **educational and non-commercial use**.

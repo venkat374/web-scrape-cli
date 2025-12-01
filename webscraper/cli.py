@@ -27,3 +27,6 @@ def main():
             print("No links found.")
     except Exception as e:
         print(f"Failed to fetch {url}: {e}")
+
+if __name__ == "__main__":
+    main()
