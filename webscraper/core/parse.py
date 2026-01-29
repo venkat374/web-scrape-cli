@@ -16,3 +16,10 @@ def get_links(soup, base_url):
         href = a["href"]
         links.append({"url": href, "text": text})
     return links
+
+def get_images(soup, base_url):
+    images = []
+    for img in soup.find_all("img", src=True):
+        src = img["src"]
+        images.append({"src": src, "alt": img.get("alt", "")})
+    return images
