@@ -13,10 +13,13 @@ Fetch any webpage using its URL.
 
 Automatically adds `https://` if you forget it.
 
-Extracts and prints:
+## Features
 
-* Page title
-* All hyperlinks (`<a href="...">`) with text
+* **Page title**
+* **Links**: Extracts all hyperlinks (`<a href="...">`) with text.
+* **Images**: Extracts all image sources (`<img src="...">`).
+* **Output to File**: Save the results to a file using `-o`.
+* **Field Selection**: Choose what to scrape (`title`, `links`, `images`) using `-f`.
 
 ---
 
@@ -32,7 +35,7 @@ web-scrape-cli/
 │       ├── __init__.py
 │       ├── utils.py        # Helper functions (normalize URL)
 │       ├── fetch.py        # Fetch page HTML
-│       └── parse.py        # Extract title and links
+│       └── parse.py        # Extract title, links, and images
 │
 ├── pyproject.toml          # Package metadata (for pip install -e .)
 └── README.md
@@ -81,11 +84,29 @@ webscraper example.com
 python -m webscraper.cli example.com
 ```
 
+### Advanced Usage
+
+**Save output to a file:**
+```bash
+webscraper example.com -o results.txt
+```
+
+**Scrape only specific fields (e.g., images):**
+```bash
+webscraper example.com -f images
+```
+
+**Scrape multiple fields:**
+```bash
+webscraper example.com -f title links images
+```
+
 ---
 
 ## Example Output
 
 ```bash
+$ webscraper example.com
 Scraping content from https://example.com
 Page title: Example Domain
 
@@ -106,9 +127,9 @@ All Links:
 
 ## 🛠️ Future Enhancements (M1 Roadmap)
 
-* [ ] Extract images (`--images` flag)
+* [x] Extract images (`--fields images`)
 * [ ] Extract meta tags (description, keywords, etc.)
-* [ ] Save output to JSON or CSV
+* [x] Save output to file (`--output`)
 * [ ] Handle relative links with `urljoin`
 
 ---
